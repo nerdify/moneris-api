@@ -199,7 +199,7 @@ class Vault extends Gateway
      *
      * @return \CraigPaul\Moneris\Response
      */
-    public function update($key = '', CreditCard $card, $extra_params = [])
+    public function update(CreditCard $card, $key = '', $extra_params = [])
     {
         $params = array_merge($extra_params, [
             'type' => 'res_update_cc',
